@@ -15,62 +15,6 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!--bootstrap JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Button trigger modal -->
-    <!-- <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Launch demo modal
-    </button> -->
-
-    <!-- Modal -->
-    <!-- <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 me-auto ms-auto" id="exampleModalLabel">
-              Welcome to Cabinetmark LLC
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            Hello if you are seeing this then its a launch type modal used on
-            CabinetMark LLC
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">know more</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <!----------------------------------------------------------------------------------->
 
     <header>
@@ -84,51 +28,96 @@
             <div class="hdr-name">
               <a href=""><img src="./assets/CabinetMark LLC.png" alt="" /> </a>
             </div>
-            <div class="navbar-collapse1">
-              <ul>
-                <li class="nav-items1">
-                  <a class="nav-links1" href="">Home</a>
-                </li>
-                <li class="nav-items">
-                  <a class="nav-links" href="">Shop now</a>
-                </li>
-                <li class="nav-items">
-                  <a class="nav-links" href="">About Us</a>
-                </li>
-                <li class="nav-items">
-                  <a class="nav-links" href="">Contact Us</a>
-                </li>
-                <li class="nav-items">
-                  <a class="nav-links" href="">Blog</a>
-                </li>
-              </ul>
-
-              <div class="navbar-collapse2">
-                <div class="navbar-collapse2-items">
-                  <div class="navbar-collapse2-image">
-                    <a href="">
-                      <img class="search" src="./assets/Search.png" alt="" />
-                      <img
-                        class="usericon"
-                        src="./assets/iconoir_user.png"
-                        alt=""
-                      />
-                    </a>
-                    <a class="cart" href="">
-                      <img
-                        class="bagicon"
-                        src="./assets/teenyicons_bag-outline.png"
-                        alt=""
-                      />
-                      <strong>Cart:</strong> 0 item(s)</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
           </nav>
         </div>
       </div>
+
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        Button with data-bs-target
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">MENU</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-collapse1">
+            <ul>
+              <li class="nav-items1">
+                <a class="nav-links1" href="">Home</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-links" href="">Shop now</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-links" href="">About Us</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-links" href="">Contact Us</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-links" href="">Blog</a>
+              </li>
+            </ul>
+
+            <div class="navbar-collapse2">
+              <div class="navbar-collapse2-items">
+                <div class="navbar-collapse2-image">
+                  <a href="">
+                    <img class="search" src="./assets/Search.png" alt="" />
+                    <img
+                      class="usericon"
+                      src="./assets/iconoir_user.png"
+                      alt=""
+                    />
+                  </a>
+                  <a class="cart" href="">
+                    <img
+                      class="bagicon"
+                      src="./assets/teenyicons_bag-outline.png"
+                      alt=""
+                    />
+                    <strong>Cart:</strong> 0 item(s)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="dropdown mt-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+
       <!-------Banner-section----------->
 
       <main class="main-banner-section">
@@ -248,5 +237,62 @@
         </div>
       </div>
     </section>
+
+    <!--bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Button trigger modal -->
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <!-- <div
+
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 me-auto ms-auto" id="exampleModalLabel">
+              Welcome to Cabinetmark LLC
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Hello if you are seeing this then its a launch type modal used on
+            CabinetMark LLC
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">know more</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
   </body>
 </html>
