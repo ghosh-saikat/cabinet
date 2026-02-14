@@ -24,15 +24,120 @@
 
       <div class="hdr-bottom">
         <div class="hdr-btm-container">
-          <nav>
+          <!-- <nav>
             <div class="hdr-name">
               <a href=""><img src="./assets/CabinetMark LLC.png" alt="" /> </a>
             </div>
-          </nav>
+            <div class="navbar-collapse1">
+              <ul>
+                <li class="nav-items1">
+                  <a class="nav-links1" href="">Home</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-links" href="">Shop now</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-links" href="">About Us</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-links" href="">Contact Us</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-links" href="">Blog</a>
+                </li>
+              </ul>
+
+              <div class="navbar-collapse2">
+                <div class="navbar-collapse2-items">
+                  <div class="navbar-collapse2-image">
+                    <a href="">
+                      <img class="search" src="./assets/Search.png" alt="" />
+                      <img
+                        class="usericon"
+                        src="./assets/iconoir_user.png"
+                        alt=""
+                      />
+                    </a>
+                    <a class="cart" href="">
+                      <img
+                        class="bagicon"
+                        src="./assets/teenyicons_bag-outline.png"
+                        alt=""
+                      />
+                      <strong>Cart:</strong> 0 item(s)</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav> -->
         </div>
       </div>
 
-      <button
+      <nav class="navbar navbar-expand-xl bg-transparent">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="./assets/CabinetMark LLC.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-center" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item1">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <img class="search" src="./assets/Search.png" alt="" />
+                  <img
+                    class="usericon"
+                    src="./assets/iconoir_user.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="nav-item2">
+                <div class="line"></div>
+              </li>
+              <li class="nav-iteml">
+                <a class="cart-nav-link" href="">
+                  <img
+                    class="bagicon"
+                    src="./assets/teenyicons_bag-outline.png"
+                    alt=""
+                  />
+                  <strong>Cart:</strong> 0 item(s)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!---------------------offcanvas code-------------------->
+      <!-- <button
         class="btn btn-primary"
         type="button"
         data-bs-toggle="offcanvas"
@@ -55,53 +160,10 @@
             class="btn-close"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="navbar-collapse1">
-            <ul>
-              <li class="nav-items1">
-                <a class="nav-links1" href="">Home</a>
-              </li>
-              <li class="nav-items">
-                <a class="nav-links" href="">Shop now</a>
-              </li>
-              <li class="nav-items">
-                <a class="nav-links" href="">About Us</a>
-              </li>
-              <li class="nav-items">
-                <a class="nav-links" href="">Contact Us</a>
-              </li>
-              <li class="nav-items">
-                <a class="nav-links" href="">Blog</a>
-              </li>
-            </ul>
-
-            <div class="navbar-collapse2">
-              <div class="navbar-collapse2-items">
-                <div class="navbar-collapse2-image">
-                  <a href="">
-                    <img class="search" src="./assets/Search.png" alt="" />
-                    <img
-                      class="usericon"
-                      src="./assets/iconoir_user.png"
-                      alt=""
-                    />
-                  </a>
-                  <a class="cart" href="">
-                    <img
-                      class="bagicon"
-                      src="./assets/teenyicons_bag-outline.png"
-                      alt=""
-                    />
-                    <strong>Cart:</strong> 0 item(s)</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="dropdown mt-3">
+          ></button> -->
+      <!-- </div> -->
+      <!-- <div class="offcanvas-body"> -->
+      <!-- <div class="dropdown mt-3">
             <button
               class="btn btn-secondary dropdown-toggle"
               type="button"
@@ -115,8 +177,8 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </div> -->
-        </div>
-      </div>
+      <!-- </div> -->
+      <!-- </div> -->
 
       <!-------Banner-section----------->
 
@@ -129,15 +191,14 @@
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy
             </p>
-            <div class="btn">
-              <a class="banner-btn text-center" href=""
+            <div class="banner-btn text-center">
+              <a class="bnt" href=""
                 >Explore doors
                 <img src="./assets/Vector.png" alt="" />
               </a>
             </div>
           </div>
         </section>
-        <!-- </div> -->
       </main>
     </header>
     <!--------------Products-section------------------>
