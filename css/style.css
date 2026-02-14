@@ -239,6 +239,9 @@ nav,
   font-weight: 600;
   max-width: 653px;
 }
+.banner-card .bnt {
+  margin-top: 35px;
+}
 .banner-card p {
   max-width: 621px;
   text-align: center;
@@ -351,6 +354,67 @@ nav,
 }
 .aboutus-section .box-arrow2 {
   margin: 20px 0 52px 0;
+}
+
+/*********************************************Footer-section***********************/
+.footer-section {
+  padding: 64px 0 23px 0;
+}
+.ftr-hdr {
+  font-family: "Amiri", sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.ftr-cntn {
+  position: relative;
+}
+.ftr-cntn p {
+  margin: 20px 0 20px 0;
+  color: var(--btn-bg-color);
+}
+.line {
+  position: absolute;
+  height: 1px;
+  width: 66px;
+  background: black;
+  top: -19px;
+  bottom: 50px;
+  right: 55px;
+  left: 0px;
+}
+
+input[type="email"] {
+  border-radius: 60px;
+  padding: 15px 0 15px 23px;
+  margin-bottom: 13px;
+  width: 100%;
+}
+.footer-section .bnt {
+  margin: 0;
+  padding: 21px 45px;
+}
+.ftr-item a {
+  color: var(--btn-bg-color);
+}
+.social-links {
+  margin-right: 35px;
+}
+.line-btm {
+  position: absolute;
+  height: 0.5px;
+  width: 100%;
+  top: 350px;
+  bottom: 0px;
+  background: black;
+}
+
+.footer-section {
+  position: relative;
+}
+.line-btm-para {
+  color: var(--btn-bg-color);
+  margin: 21px 0 23px 0;
 }
 /******************(*********************media queries start here*********************/
 
