@@ -198,7 +198,7 @@ nav,
   height: 1px;
   width: 44px;
   position: absolute;
-  top: 16px;
+  top: 32px;
   bottom: 13px;
   left: 0px;
   right: 55px;
@@ -345,13 +345,11 @@ nav,
 }
 .col-3 .icon img {
   max-width: 111px;
-  height: 111px;
+
   margin: 0 auto;
   margin-bottom: 32px;
 }
-.about-icon .row .col-3 {
-  padding: 0 !important;
-}
+
 .aboutus-section .box-arrow2 {
   margin: 20px 0 52px 0;
 }
@@ -463,5 +461,59 @@ input[type="email"] {
     right: 58px;
     transform: rotate(360deg);
     background: white;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  .testimonial-section .row {
+    flex-direction: column-reverse;
+  }
+  .testimonial-section .col-4 {
+    width: 100%;
+  }
+  .testimonial-cntn {
+    margin-bottom: 50px;
+  }
+  .testimonial-cntn .test-hdr {
+    text-align: center;
+  }
+  .testimonial-cntn .box-arrow,
+  .testimonial-cntn .testimonial-para,
+  .testimonial-cntn .testimonial-bnt a {
+    margin: 0 auto !important;
+  }
+  .testimonial-cntn .testimonial-bnt {
+    margin-top: 20px;
+  }
+
+  .testimonial-section .col-8 {
+    width: 100%;
+    text-align: center;
+  }
+  .testimonial-section .back-img {
+    margin: 0 auto;
+  }
+  .col-8 .back-img {
+    justify-content: center;
+  }
+
+  .top-img {
+    max-width: 326px;
+    position: absolute;
+    top: 300px;
+    bottom: 0px;
+    right: 100px;
+    left: 600px;
+  }
+
+  /*************************************About us section*********************/
+  /* .aboutus-section .row {
+    flex-direction:;
+
+    flex-wrap: nowrap;
+  } */
+  .aboutus-section .row .col-3-one {
+    width: 50%;
+    margin-bottom: 50px;
   }
 }
