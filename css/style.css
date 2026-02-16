@@ -4,6 +4,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* html,
+body {
+  overflow-x: hidden;
+} */
+
 ul,
 p {
   padding: 0;
@@ -18,7 +23,7 @@ p {
 :root {
   --btn-bg-color: #95a986;
 }
-.hdr-container {
+/* .hdr-container {
   max-width: 1950px;
   margin: 0 auto;
   padding: 0 15px;
@@ -29,14 +34,14 @@ p {
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
-}
-.container {
+} */
+/* .container {
   max-width: 1490px;
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
-}
-.row {
+} */
+/* .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
@@ -60,7 +65,7 @@ p {
 .col-4 {
   width: calc(8.33% * 4);
   padding: 0 15px;
-}
+} */
 
 a {
   display: inline-block;
@@ -108,37 +113,40 @@ header {
 .hdr-name {
   margin-top: 21px;
 }
-nav,
+.search {
+  margin-left:;
+}
+/* nav,
 .navbar-collapse1,
 .navbar-collapse1 > ul,
 .navbar-collapse2,
 .navbar-collapse2 > ul {
   display: flex;
   align-items: center;
-}
-.nav-link {
+} */
+.offcanvas .nav-link {
   color: white;
   text-transform: uppercase;
   /* margin-top: 21px; */
   padding: 0 !important;
-  margin-left: 56px;
+  margin-left: 20px;
 }
 .navbar-collapse2-image .search {
   margin-left: 56px;
   /* display: flex;
   align-items: center; */
 }
-nav,
+/* nav,
 .navbar-collapse1 {
   flex-grow: 1;
-}
+} */
 .usericon {
   margin-left: 22px;
 }
 .bagicon {
   margin-left: 44px;
 }
-.navbar-collapse1 > ul {
+/* .navbar-collapse1 > ul {
   margin-left: auto;
 }
 .navbar-collapse2-image {
@@ -146,7 +154,7 @@ nav,
 }
 .navbar-collapse2-image a {
   color: white;
-}
+} */
 /* .btn a {
   padding: 29px 38px;
   color: black;
@@ -276,14 +284,23 @@ nav,
   font-family: "Amiri", sans-serif;
 }
 
-.product-card .card-img {
-  max-width: 347px;
-  height: 382px;
+.product-card .card-img > img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
-.products-section .row .col-3 {
-  padding: 0;
+/* .product-card-items3 > .card-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 24px;
 }
+.product-card-items4 .card-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 24px;
+} */
 
 /*****************************************Testimonial-section**************************/
 .testimonial-section {
