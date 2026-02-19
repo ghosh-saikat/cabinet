@@ -182,10 +182,11 @@ header {
 .nav-link-last {
   color: white;
 }
-.nav-item1 {
+.nav-link1 {
   position: relative;
+  color: white;
 }
-.nav-item1::after {
+.nav-link1::after {
   content: "";
   position: absolute;
   background: white;
@@ -193,7 +194,7 @@ header {
   width: 6px;
   top: 28px;
   bottom: 0;
-  left: 73px;
+  left: 20px;
   right: 0;
   border-radius: 100px;
   border-bottom: 1px solid white;
@@ -532,5 +533,62 @@ input[type="email"] {
   .aboutus-section .row .col-3-one {
     width: 50%;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  /*Banner-section*/
+  .banner-card {
+    padding: 10px;
+  }
+  .banner-hdr {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .bnt {
+    padding: 12px 24px;
+  }
+
+  .product-subhdr p {
+    font-size: 22px;
+  }
+  .product-card .row {
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+  }
+  .product-card .row .col-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .test-hdr {
+    font-size: 30px;
+  }
+
+  .top-img {
+    max-width: 326px;
+    position: absolute;
+    top: 190px;
+    bottom: 4px;
+    right: 100px;
+    left: 148px;
+    height: 100%;
+    width: 50%;
+  }
+  .bg-img {
+    height: 90%;
+  }
+
+  .back-white {
+    background: white;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+    border-top-left-radius: 8px;
+    height: 50%;
+    width: 100%;
   }
 }
