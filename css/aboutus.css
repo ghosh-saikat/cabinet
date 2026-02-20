@@ -97,7 +97,9 @@ img {
 }
 /*************************************Navbar-section***************************/
 header {
-  background: url("../assets/banner-img.png") no-repeat center/cover;
+  background: url("../assets/banner-aboutus.png") no-repeat left/ cover;
+  /* height: 525px;
+  max-width: 1920px; */
   min-height: 100vh;
 }
 .hdr-top-para {
@@ -194,7 +196,7 @@ header {
   width: 6px;
   top: 28px;
   bottom: 0;
-  left: 20px;
+  left: 40px;
   right: 0;
   border-radius: 100px;
   border-bottom: 1px solid white;
@@ -227,34 +229,37 @@ header {
 }
 .banner-card {
   background: white;
-  max-width: 793px;
+  width: fit-content;
+
   border-radius: 20px;
   /* margin-top: 224px; */
-  padding: 76px 60px;
+  /* padding: 76px 60px; */
   margin: 0 auto;
 }
-.main-banner-section .container {
-  /* height: 424px; */
+
+/* .main-banner-section .container {
+  height: 424px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .banner-hdr {
   text-transform: capitalize;
-  margin: 0 auto;
-  margin-bottom: 35px;
+  text-align: center;
+  /* margin-bottom: 35px; */
   font-size: 68px;
   font-family: "Amiri", sans-serif;
   font-weight: 600;
-  max-width: 653px;
+  padding: 48px 100px;
+  /* max-width: 653px; */
 }
 .banner-card .bnt {
   margin-top: 35px;
 }
-.banner-card p {
+/* .banner-card p {
   max-width: 621px;
   text-align: center;
-}
+} */
 /* .bnt {
   color: black;
   padding: 29px 39px;
@@ -267,42 +272,32 @@ header {
   width: fit-content;
 } */
 
-/************************************Products-section***************************/
-.products-section {
-  padding: 100px 0 90px 0;
+/***************************************About us section*************************/
+.aboutus-section {
+  padding: 110px 0 100px 0;
+  background: #f6f6f6;
 }
-.product-subhdr {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.aboutus-cntn {
+  max-width: 554px;
 }
-.product-hdr p {
-  text-transform: uppercase;
-}
-.product-subhdr p {
-  font-size: 45px;
-  text-transform: uppercase;
-  font-family: "Amiri", sans-serif;
+.about-para {
+  text-transform: capitalize;
 }
 
-.product-card .card-img > img {
+.aboutus-section .subtitle {
+  color: var(--btn-bg-color);
+}
+.aboutus-img1 {
+  max-width: 100%;
   height: 100%;
-  width: 100%;
   object-fit: cover;
 }
-/* .product-card-items3 > .card-img > img {
+.aboutus-img2 {
+  margin-left: 24px;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
-  margin: 0 24px;
 }
-.product-card-items4 .card-img > img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  margin: 0 24px;
-} */
-
 /*****************************************Testimonial-section**************************/
 .testimonial-section {
   padding: 140px 0 140px 0;
@@ -349,28 +344,6 @@ header {
 }
 .testimonial-bnt a {
   margin: 0 !important;
-}
-/**************************************About-us-section***********************************/
-.aboutus-section {
-  padding: 140px 0 140px 0;
-}
-.about-sub-hdr {
-  color: var(--btn-bg-color);
-  text-transform: uppercase;
-}
-.icon-hdr {
-  text-transform: uppercase;
-  font-size: 24px;
-}
-.col-3 .icon img {
-  max-width: 111px;
-
-  margin: 0 auto;
-  margin-bottom: 32px;
-}
-
-.aboutus-section .box-arrow2 {
-  margin: 20px 0 52px 0;
 }
 
 /*********************************************Footer-section***********************/
@@ -437,7 +410,7 @@ input[type="email"] {
   padding: 58px 0 23px 0;
 }
 /******************(*********************media queries start here*********************/
-
+/* 
 @media screen and (max-width: 1200px) {
   .offcanvas {
     flex-direction: column;
@@ -458,9 +431,9 @@ input[type="email"] {
     margin: 0;
   }
   .banner-card p {
-    margin: 0 auto;
-    /* margin-top: 20px; */
-  }
+    margin: 0 auto; */
+/* margin-top: 20px; */
+/* }
   .navbar-nav {
     margin: 0 auto;
   }
@@ -526,28 +499,28 @@ input[type="email"] {
     bottom: 0px;
     right: 100px;
     left: 600px;
-  }
+  } */
 
-  /*************************************About us section*********************/
-  /* .aboutus-section .row {
+/*************************************About us section*********************/
+/* .aboutus-section .row {
     flex-direction:;
 
     flex-wrap: nowrap;
   } */
-  .aboutus-section .row .col-3-one {
+/* .aboutus-section .row .col-3-one {
     width: 50%;
-    margin-bottom: 50px;
-  }
-}
+    margin-bottom: 50px; */
+/* }
+} */
 /***********************************media-querry-------768px*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar-toggler {
     margin: 0 auto;
     margin-top: 20px;
-  }
+  } */
 
-  /*Banner-section*/
-  .banner-card {
+/*Banner-section*/
+/* .banner-card {
     padding: 10px;
   }
   .banner-hdr {
@@ -562,9 +535,9 @@ input[type="email"] {
     font-size: 22px;
   }
   .product-card .row {
-    flex-direction: column;
-    /* flex-wrap: nowrap; */
-  }
+    flex-direction: column; */
+/* flex-wrap: nowrap; */
+/* }
   .product-card .row .col-3 {
     width: 100%;
     margin-bottom: 20px;
@@ -625,4 +598,4 @@ input[type="email"] {
     height: 100%;
     width: 50%;
   }
-}
+} */
