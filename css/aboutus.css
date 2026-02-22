@@ -599,3 +599,33 @@ input[type="email"] {
     width: 50%;
   }
 } */
+
+@media screen and (max-width: 1024px) {
+  .back-img {
+    position: relative;
+    /* height: 100%;
+  width: 100%; */
+    z-index: 99;
+  }
+  .bg-img {
+    max-width: 641px;
+    position: relative;
+    height: 467px;
+  }
+  .back-white {
+    background: white;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+    border-top-left-radius: 30px;
+    height: 227px;
+    width: 215px;
+  }
+  .top-img {
+    max-width: 326px;
+    position: absolute;
+    top: 300px;
+    bottom: 0px;
+    right: 100px;
+    left: 370px;
+  }
+}
