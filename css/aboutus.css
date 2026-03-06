@@ -410,17 +410,104 @@ input[type="email"] {
   padding: 58px 0 23px 0;
 }
 /******************(*********************media queries start here*********************/
-/* 
+
 @media screen and (max-width: 1200px) {
-  .offcanvas {
+  .menu {
+    position: relative;
+    padding: 18px 20px;
+    margin-left: auto;
+    /* background: white; */
+    z-index: 999;
+  }
+  .menu span {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 17px;
+    background-color: black;
+    /* transform: translateY(-50%); */
+    transition: 0.5s linear;
+
+    /* opacity: 1; */
+  }
+
+  .menu.show span {
+    /* transition: 1s linear; */
+    transform: translate(-30px);
+    opacity: 0;
+  }
+  /* .menu.show {
+    transition: 0.5s linear;
+    } */
+  .menu::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 27px;
+    background-color: black;
+    transition: 0.5s linear;
+  }
+  .menu::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    background-color: black;
+    transition: 0.5s linear;
+  }
+
+  .menu.show::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    transform: rotate(45deg);
+    transition: 0.5s linear;
+  }
+  .menu.show::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transition: 0.5s linear;
+  }
+
+  .canvas {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     padding-top: 58.67px;
+    /* margin-top: 20px; */
+
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    right: -100%;
+    padding-top: 100px;
+    transition: 1s linear;
+  }
+  .line {
+    display: none;
   }
   .nav-link,
   .cart-nav-link > .bagicon {
-    margin: 0;
+    margin-top: 20px;
   }
 
   .banner-card {
@@ -431,34 +518,65 @@ input[type="email"] {
     margin: 0;
   }
   .banner-card p {
-    margin: 0 auto; */
-/* margin-top: 20px; */
-/* }
-  .navbar-nav {
     margin: 0 auto;
-  }
-  .nav-link,
-  .cart-nav-link {
     margin-top: 20px;
   }
 
+  .navbar-nav {
+    margin: 0 auto;
+  }
+  /* .nav-link,
+  .cart-nav-link {
+    margin-top: 20px;
+    margin-left:0;
+  } */
+  .canvas .nav-link {
+    margin: 0;
+  }
   .offcanvas .nav-item2 {
     position: relative;
   }
+  .nav-link-last {
+    color: white;
+    margin-top: 20px;
+  }
+
+  .cart-nav-link > .bagicon {
+    margin: 0;
+  }
+  .nav-iteml .bag-icon img {
+    margin: 0;
+  }
+  /* .line {
+    opacity: 0;
+  } */
   .offcanvas .nav-item2 ::before {
     content: " ";
     height: 1px;
     width: 44px;
     position: absolute;
-    top: 13px;
+    top: 24px;
     bottom: 13px;
-    left: 44px;
+    left: 75px;
     right: 58px;
     transform: rotate(360deg);
     background: white;
   }
-}
 
+  .nav-link1::after {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 6px;
+    width: 6px;
+    top: 35px;
+    bottom: 0;
+    left: 335px;
+    right: 0;
+    border-radius: 100px;
+    border-bottom: 1px solid white;
+  }
+}
 @media screen and (max-width: 1095px) {
   .testimonial-section .row {
     flex-direction: column-reverse;
@@ -499,19 +617,19 @@ input[type="email"] {
     bottom: 0px;
     right: 100px;
     left: 600px;
-  } */
-
+  }
+}
 /*************************************About us section*********************/
-/* .aboutus-section .row {
-    flex-direction:;
+.aboutus-section .row {
+  /* flex-direction:; */
 
-    flex-wrap: nowrap;
-  } */
-/* .aboutus-section .row .col-3-one {
+  flex-wrap: nowrap;
+
+  .aboutus-section .row .col-3-one {
     width: 50%;
-    margin-bottom: 50px; */
-/* }
-} */
+    margin-bottom: 50px;
+  }
+}
 /***********************************media-querry-------768px*/
 /* @media (max-width: 768px) {
   .navbar-toggler {
@@ -607,10 +725,11 @@ input[type="email"] {
   width: 100%; */
     z-index: 99;
   }
-  .bg-img {
-    max-width: 641px;
+  .testimonial-section .bg-img {
+    /* max-width: 641px; */
+    width: 80%;
     position: relative;
-    height: 467px;
+    /* height: 467px; */
   }
   .back-white {
     background: white;
@@ -627,5 +746,41 @@ input[type="email"] {
     bottom: 0px;
     right: 100px;
     left: 370px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-section .row .col-4,
+  .col-3,
+  .col-2 {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-section .bnt {
+    margin: 0 auto;
+  }
+  .footer-section .row {
+    flex-direction: column;
+  }
+  .footer-section .ftr-cntn .social-links {
+    margin: 0 auto;
+  }
+
+  .footer-section .row .col-4,
+  .col-3,
+  .col-2 {
+    margin-top: 20px;
+  }
+  .footer-section .line {
+    margin: 0 auto;
+  }
+  .line {
+    position: absolute;
+    height: 1px;
+    width: 66px;
+    background: black;
+    top: -19px;
+    bottom: 50px;
+    right: 55px;
+    left: 43px;
   }
 }

@@ -126,7 +126,7 @@ header {
   display: flex;
   align-items: center;
 } */
-.offcanvas .nav-link {
+.canvas .nav-link {
   color: white;
   text-transform: uppercase;
   /* margin-top: 21px; */
@@ -201,10 +201,10 @@ header {
   border-radius: 100px;
   border-bottom: 1px solid white;
 }
-.offcanvas .nav-item2 {
+.canvas .nav-item2 {
   position: relative;
 }
-.offcanvas .nav-item2 ::before {
+.canvas .nav-item2 ::before {
   content: " ";
   height: 1px;
   width: 44px;
@@ -379,13 +379,97 @@ header {
   padding: 58px 0 23px 0;
 }
 /******************(*********************media queries start here*********************/
-/* 
+
 @media screen and (max-width: 1200px) {
-  .offcanvas {
+  .menu {
+    position: relative;
+    padding: 18px 20px;
+    margin-left: auto;
+    /* background: white; */
+    z-index: 999;
+  }
+  .menu span {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 17px;
+    background-color: black;
+    /* transform: translateY(-50%); */
+    transition: 0.5s linear;
+
+    /* opacity: 1; */
+  }
+
+  .menu.show span {
+    /* transition: 1s linear; */
+    transform: translate(-30px);
+    opacity: 0;
+  }
+  /* .menu.show {
+    transition: 0.5s linear;
+    } */
+  .menu::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 27px;
+    background-color: black;
+    transition: 0.5s linear;
+  }
+  .menu::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    background-color: black;
+    transition: 0.5s linear;
+  }
+
+  .menu.show::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    transform: rotate(45deg);
+    transition: 0.5s linear;
+  }
+  .menu.show::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transition: 0.5s linear;
+  }
+
+  .canvas {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     padding-top: 58.67px;
+    /* margin-top: 20px; */
+
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    right: -100%;
+    padding-top: 100px;
+    transition: 1s linear;
   }
   .nav-link,
   .cart-nav-link > .bagicon {
@@ -400,9 +484,9 @@ header {
     margin: 0;
   }
   .banner-card p {
-    margin: 0 auto; */
-/* margin-top: 20px; */
-/* }
+    margin: 0 auto;
+    /* margin-top: 20px; */
+  }
   .navbar-nav {
     margin: 0 auto;
   }
@@ -411,20 +495,42 @@ header {
     margin-top: 20px;
   }
 
-  .offcanvas .nav-item2 {
+  .canvas .nav-item2 {
     position: relative;
   }
-  .offcanvas .nav-item2 ::before {
+  .canvas .nav-item2 ::before {
     content: " ";
     height: 1px;
     width: 44px;
     position: absolute;
-    top: 13px;
+    top: 30px;
     bottom: 13px;
-    left: 44px;
+    left: 300px;
     right: 58px;
     transform: rotate(360deg);
     background: white;
+  }
+  .canvas .nav-item2 .line::before {
+    display: none;
+  }
+  .canvas .nav-item2 .line {
+    background: white;
+    left: 283px;
+    top: 10px;
+  }
+
+  .nav-link1::after {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 6px;
+    width: 6px;
+    top: 28px;
+    bottom: 0;
+    left: 295px;
+    right: 0;
+    border-radius: 100px;
+    border-bottom: 1px solid white;
   }
 }
 
@@ -468,28 +574,28 @@ header {
     bottom: 0px;
     right: 100px;
     left: 600px;
-  } */
+  }
 
-/*************************************About us section*********************/
-/* .aboutus-section .row {
+  /*************************************About us section*********************/
+  /* .aboutus-section .row {
     flex-direction:;
 
     flex-wrap: nowrap;
   } */
-/* .aboutus-section .row .col-3-one {
+  .aboutus-section .row .col-3-one {
     width: 50%;
-    margin-bottom: 50px; */
-/* }
-} */
+    margin-bottom: 50px;
+  }
+}
 /***********************************media-querry-------768px*/
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar-toggler {
     margin: 0 auto;
     margin-top: 20px;
-  } */
+  }
 
-/*Banner-section*/
-/* .banner-card {
+  /*Banner-section*/
+  .banner-card {
     padding: 10px;
   }
   .banner-hdr {
@@ -504,9 +610,9 @@ header {
     font-size: 22px;
   }
   .product-card .row {
-    flex-direction: column; */
-/* flex-wrap: nowrap; */
-/* }
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
   .product-card .row .col-3 {
     width: 100%;
     margin-bottom: 20px;
@@ -567,4 +673,4 @@ header {
     height: 100%;
     width: 50%;
   }
-} */
+}

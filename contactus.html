@@ -85,18 +85,11 @@
               />
             </a>
           </div>
-          <button
-            class="navbar-toggler bg-white"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-center" id="navbarNav">
+
+          <div class="menu show">
+            <span> </span>
+          </div>
+          <div class="canvas text-center" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html"
@@ -395,55 +388,24 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const menu = document.querySelector(".menu");
+      const navbarCollapse = document.querySelector(".canvas");
 
-    <!-- Button trigger modal -->
-    <!-- <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Launch demo modal
-    </button> -->
+      let collapsed = true;
 
-    <!-- Modal -->
-    <!-- <div
-
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 me-auto ms-auto" id="exampleModalLabel">
-              Welcome to Cabinetmark LLC
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            Hello if you are seeing this then its a launch type modal used on
-            CabinetMark LLC
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">know more</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
+      menu = addEventListener("click", () => {
+        console.log(menu.classList);
+        if (collapsed == true) {
+          menu.classList.add("show");
+          navbarCollapse.style.right = "0";
+          collapsed = false;
+        } else {
+          menu.classList.remove("show");
+          navbarCollapse.style.right = "-100%";
+          collapsed = true;
+        }
+      });
+    </script>
   </body>
 </html>

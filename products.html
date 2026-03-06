@@ -85,18 +85,10 @@
               />
             </a>
           </div>
-          <button
-            class="navbar-toggler bg-white"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-center" id="navbarNav">
+          <div class="menu show">
+            <span> </span>
+          </div>
+          <div class="canvas canvas-end text-center" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html"
@@ -131,7 +123,7 @@
                 </div>
               </li>
               <li class="nav-item2">
-                <div class="line"></div>
+                <div class="line2"></div>
               </li>
               <li class="nav-iteml">
                 <a class="cart-nav-link" href="">
@@ -208,7 +200,7 @@
     <!----------------------------------Products-section------------------------->
     <main class="products-section">
       <div class="container">
-        <div class="row">
+        <div class="row pro-row">
           <div class="col-3">
             <form action="">
               <label for="">
@@ -216,7 +208,7 @@
                 <img class="search-img" src="./assets/search2.png" alt="" />
               </label>
             </form>
-            <form action="">
+            <form action="" class="product-category">
               <div class="d-flex justify-content-between align-items-baseline">
                 <div>
                   <p class="para-hdr">Product categories</p>
@@ -273,7 +265,7 @@
               </div>
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="products-row1 d-flex align-items-center">
               <div class="col-4">
                 <div class="card-img">
                   <img
@@ -334,7 +326,7 @@
               </div>
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="products-row2 d-flex align-items-center">
               <div class="col-4">
                 <div class="card-img">
                   <img
@@ -395,7 +387,7 @@
               </div>
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="products-row3 d-flex align-items-center">
               <div class="col-4">
                 <div class="card-img">
                   <img
@@ -538,7 +530,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="ftr-links d-flex">
+              <div class="ftr-links d-flex justify-content-center">
                 <div class="social-links">
                   <a href="">
                     <img src="./assets/F.png" alt="" />
@@ -574,54 +566,24 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Button trigger modal -->
-    <!-- <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Launch demo modal
-    </button> -->
+    <script>
+      const menu = document.querySelector(".menu");
+      const navbarCollapse = document.querySelector(".canvas");
 
-    <!-- Modal -->
-    <!-- <div
+      let collapsed = true;
 
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 me-auto ms-auto" id="exampleModalLabel">
-              Welcome to Cabinetmark LLC
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            Hello if you are seeing this then its a launch type modal used on
-            CabinetMark LLC
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">know more</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
+      menu = addEventListener("click", () => {
+        console.log(menu.classList);
+        if (collapsed == true) {
+          menu.classList.add("show");
+          navbarCollapse.style.right = "0";
+          collapsed = false;
+        } else {
+          menu.classList.remove("show");
+          navbarCollapse.style.right = "-100%";
+          collapsed = true;
+        }
+      });
+    </script>
   </body>
 </html>
