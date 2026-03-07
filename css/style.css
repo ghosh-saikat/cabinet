@@ -175,11 +175,13 @@ header {
   text-transform: uppercase;
   margin-top: 21px;
 } */
-.nav-link {
+/* .nav-link,
+.nav-link1 {
   color: white;
   text-transform: uppercase;
   margin-left: 10px;
-}
+  position: relative;
+} */
 .cart-nav-link {
   color: white;
 }
@@ -193,7 +195,49 @@ header {
   margin-top: 20px;
   text-transform: uppercase;
 }
-.nav-link1::after {
+/* .nav-link1::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 6px;
+  width: 6px;
+  top: 28px;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  border-radius: 100px;
+  border-bottom: 1px solid white;
+} */
+.nav-link1.active::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 6px;
+  width: 6px;
+  top: 28px;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  border-radius: 100px;
+  border-bottom: 1px solid white;
+}
+.navbar-nav .nav-link {
+  position: relative;
+}
+.nav-link1:hover::before {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 6px;
+  width: 6px;
+  top: 28px;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  border-radius: 100px;
+  border-bottom: 1px solid white;
+}
+.nav-link:hover::after {
   content: "";
   position: absolute;
   background: white;
@@ -224,6 +268,20 @@ header {
 .canvas {
   flex-direction: row;
 }
+
+/* .nav-link:hover::before {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 6px;
+  width: 6px;
+
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  border-radius: 100px;
+  border-bottom: 1px solid white;
+} */
 
 /* .offcanvas {
   flex-direction: row;
@@ -449,6 +507,7 @@ input[type="email"] {
   /* nav {
     position: relative;
   } */
+
   .menu {
     position: relative;
     padding: 18px 20px;
@@ -506,7 +565,7 @@ input[type="email"] {
     position: absolute;
     right: 10px;
     bottom: 10px;
-    background-color: black;
+    background-color: white;
     transform: rotate(45deg);
     transition: 0.5s linear;
   }
@@ -517,7 +576,7 @@ input[type="email"] {
     position: absolute;
     right: 10px;
     bottom: 10px;
-    background-color: black;
+    background-color: white;
     transform: rotate(-45deg);
     transition: 0.5s linear;
   }
