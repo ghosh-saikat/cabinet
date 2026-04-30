@@ -137,7 +137,9 @@ header {
   /* margin-top: 21px; */
   padding: 0 !important;
   margin-left: 20px;
+  margin-top: 20px;
 }
+
 .navbar-collapse2-image .search {
   margin-left: 56px;
   /* display: flex;
@@ -181,7 +183,8 @@ header {
 .nav-link {
   color: white;
   text-transform: uppercase;
-  margin-left: 56px;
+  margin-left: 50px;
+  padding: 0 !important;
 }
 .cart-nav-link {
   color: white;
@@ -192,6 +195,8 @@ header {
 .nav-link1 {
   position: relative;
   color: white;
+  text-transform: uppercase;
+  margin-left: 50px;
 }
 .nav-link1::after {
   content: "";
@@ -440,7 +445,10 @@ header {
     backdrop-filter: blur(20px);
     padding-top: 58.67px;
   } */
-
+  .nav-link1 {
+    margin: 0;
+    margin-top: 20px;
+  }
   .canvas {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.5);
@@ -568,9 +576,9 @@ header {
     background: white;
     height: 6px;
     width: 6px;
-    top: 40px;
+    top: 30px;
     bottom: 0;
-    left: 310px;
+    left: 40px;
     right: 0;
     border-radius: 100px;
     border-bottom: 1px solid white;

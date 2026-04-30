@@ -389,12 +389,12 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const menu = document.querySelector(".menu");
-      const navbarCollapse = document.querySelector(".canvas");
+      let menu = document.querySelector(".menu");
+      let navbarCollapse = document.querySelector(".canvas");
 
       let collapsed = true;
 
-      menu = addEventListener("click", () => {
+      menu.addEventListener("click", () => {
         console.log(menu.classList);
         if (collapsed == true) {
           menu.classList.add("show");

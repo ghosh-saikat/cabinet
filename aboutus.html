@@ -146,7 +146,7 @@
         <!-- <div class="container"> -->
         <section class="banner-section">
           <div class="banner-card">
-            <p class="banner-hdr">About Us</p>
+            <h1 class="banner-hdr">About Us</h1>
           </div>
         </section>
       </main>
@@ -188,11 +188,26 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <img class="aboutus-img1" src="./assets/aboutus-img1.png" alt="" />
-          </div>
-          <div class="col-3">
-            <img class="aboutus-img2" src="./assets/aboutus-img2.png" alt="" />
+          <div class="col-7">
+            <div
+              class="about-div d-flex align-items-center justify-content-center"
+            >
+              <div class="aboutus-img1">
+                <img
+                  class="w-100 object-fit-cover"
+                  src="./assets/aboutus-img1.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="aboutus-img2">
+                <img
+                  class="w-100 object-fit-cover"
+                  src="./assets/aboutus-img2.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -201,27 +216,24 @@
     <!-------------------------Testimonial section------------------------------->
     <section class="testimonial-section">
       <div class="container">
-        <div class="row">
+        <div class="row d-flex align-items-center justify-content-center">
           <div class="col-8">
-            <div class="back-img d-flex">
-              <div class="bg-img">
-                <img
-                  class="h-100 w-100 object-fit-cover"
-                  src="./assets/aboutus-test1.png"
-                  alt=""
-                />
-                <div class="top-img">
-                  <div class="back-white">
-                    <img
-                      class="h-100 w-100 object-fit-cover"
-                      src="./assets/aboutus-test2.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
+            <div class="bg-img">
+              <img
+                class="w-100 h-100 object-fit-cover"
+                src="./assets/aboutus-test1.png"
+                alt=""
+              />
+            </div>
+            <div class="for-img position-absolute">
+              <img
+                class="w-100 h-100 object-fit-cover"
+                src="./assets/aboutus-test2.png"
+                alt=""
+              />
             </div>
           </div>
+
           <div class="col-4">
             <div class="testimonial-cntn">
               <div class="test-hdr">OUR MISSION</div>
@@ -240,7 +252,7 @@
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s,
               </p>
-              <div class="testimonial-bnt">
+              <div class="testimonial-bnt d-inline-block">
                 <a class="bnt" href=""
                   >READ MORE <img src="./assets/Vector.png" alt=""
                 /></a>
@@ -366,12 +378,12 @@
     ></script>
 
     <script>
-      const menu = document.querySelector(".menu");
-      const navbarCollapse = document.querySelector(".canvas");
+      let menu = document.querySelector(".menu");
+      let navbarCollapse = document.querySelector(".canvas");
 
       let collapsed = true;
 
-      menu = addEventListener("click", () => {
+      menu.addEventListener("click", () => {
         console.log(menu.classList);
         if (collapsed == true) {
           menu.classList.add("show");

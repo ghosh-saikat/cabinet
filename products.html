@@ -85,10 +85,22 @@
               />
             </a>
           </div>
-          <div class="menu show">
+          <div class="menu">
             <span> </span>
           </div>
-          <div class="canvas canvas-end text-center" id="navbarNav">
+          <!-- 
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="canvas text-center" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./index.html"
@@ -96,9 +108,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link1 nav-link" href="./products.html"
-                  >Shop now</a
-                >
+                <a class="nav-link1" href="./products.html">Shop now</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./aboutus.html">About Us</a>
@@ -123,7 +133,7 @@
                 </div>
               </li>
               <li class="nav-item2">
-                <div class="line2"></div>
+                <div class="line"></div>
               </li>
               <li class="nav-iteml">
                 <a class="cart-nav-link" href="">
@@ -567,12 +577,12 @@
     ></script>
 
     <script>
-      const menu = document.querySelector(".menu");
-      const navbarCollapse = document.querySelector(".canvas");
+      let menu = document.querySelector(".menu");
+      let navbarCollapse = document.querySelector(".canvas");
 
       let collapsed = true;
 
-      menu = addEventListener("click", () => {
+      menu.addEventListener("click", () => {
         console.log(menu.classList);
         if (collapsed == true) {
           menu.classList.add("show");
